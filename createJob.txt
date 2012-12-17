@@ -1,3 +1,4 @@
 robocopy "F:\Documents" "E:\Documents" /MIR /R:3 /MT[:8] /NP /XD "Lightroom Catalogs" "My Games" "Battlefield 3" /SAVE:F:\workspace\backup_tool\jobs\DOCUMENTS /L
 
-make job read only
+REM Make read only
+attrib +r F:\workspace\backup_tool\jobs\DOCUMENTS

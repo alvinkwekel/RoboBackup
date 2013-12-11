@@ -1,4 +1,5 @@
 @echo off
+TITLE RoboBackup
 SETLOCAL DisableDelayedExpansion
 SET AppPath=%cd%
 SET SequenceFile=sequence.txt
@@ -12,5 +13,5 @@ FOR /F "usebackq delims=" %%a in (`"findstr /n ^^ %SequenceFile%"`) do (
 )
 ECHO All backups are completed.
 PAUSE
-REM ECHO Going to shutdown in 60 seconds.
-REM SHUTDOWN -s -t 60
+ECHO Going to shutdown in 60 seconds.
+SHUTDOWN -s -t 60

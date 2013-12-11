@@ -7,10 +7,10 @@ FOR /F "usebackq delims=" %%a in (`"findstr /n ^^ %SequenceFile%"`) do (
     SET "BackupName=%%a"
     SETLOCAL EnableDelayedExpansion
     SET "BackupName=!BackupName:*:=!"
-	CALL runJob.bat !CustomerID! !BackupName! !AppPath!
+	CALL runJob.bat "!CustomerID!" "!BackupName!" "!AppPath!"
     ENDLOCAL
 )
 ECHO All backups are completed.
 PAUSE
-::ECHO Going to shutdown in 60 seconds.
-::SHUTDOWN -s -t 60
+REM ECHO Going to shutdown in 60 seconds.
+REM SHUTDOWN -s -t 60

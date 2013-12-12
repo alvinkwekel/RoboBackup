@@ -12,6 +12,5 @@ FOR /F "usebackq delims=" %%a in (`"findstr /n ^^ %SequenceFile%"`) do (
     ENDLOCAL
 )
 ECHO All backups are completed.
-PAUSE
 ECHO Going to shutdown in 60 seconds.
 SHUTDOWN -s -t 60

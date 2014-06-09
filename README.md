@@ -21,5 +21,3 @@ Artifacts
 **date.exe:** tool to get a nice formatted date to use as log file name.
 **sequence.txt:** contains entries of what jobs to execute.
 **createJob.txt:** example RoboCopy command to create a RCJ file.
-
-

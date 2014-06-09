@@ -1,6 +1,6 @@
 RoboBackup
 ==========
-Robocopy based backup tool
+Robocopy based backup tool. Log will be written to stdout and log file.
 
 Steps
 -----
@@ -19,7 +19,6 @@ Artifacts
 **backup.bat:** main script; will go over all entries in the sequence.txt passing the entries to the runJob.bat.
 **runJob.bat:** performs the actual job execution.
 **date.exe:** tool to get a nice formatted date to use as log file name.
-**tail.exe:** tool to read the log file as it is written.
 **sequence.txt:** contains entries of what jobs to execute.
 **createJob.txt:** example RoboCopy command to create a RCJ file.
 
